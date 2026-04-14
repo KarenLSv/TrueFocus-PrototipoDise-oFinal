@@ -31,9 +31,9 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.55fr);
   gap: 20px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .hero-copy,
@@ -129,13 +129,15 @@ body {
 .logo-panel {
   display: grid;
   place-items: center;
+  padding: 36px 28px;
 }
 
 .brand-logo {
-  width: min(220px, 70%);
+  width: min(200px, 80%);
   height: auto;
-  border-radius: 36px;
+  border-radius: 32px;
   box-shadow: 0 20px 50px rgba(123, 47, 190, 0.22);
+  display: block;
 }
 
 .controls {
