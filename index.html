@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrueFocus · Prototipo de presentación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TrueFocus · Prototipo visual</p>
+        <h1>Galería navegable con el diseño de la app para tu presentación.</h1>
+        <p class="hero-text">
+          Esta carpeta replica las pantallas principales de TrueFocus en un marco de teléfono,
+          con modo claro, modo oscuro y cambio de acento para enseñar la propuesta visual sin abrir Android Studio.
+        </p>
+        <div class="hero-tags">
+          <span>Bienvenida</span>
+          <span>Login</span>
+          <span>Permisos</span>
+          <span>Inicio</span>
+          <span>Enfoque</span>
+          <span>Agenda</span>
+          <span>Bloqueos</span>
+          <span>Racha</span>
+          <span>Ajustes</span>
+          <span>Overlay</span>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <h2>Cómo usarlo</h2>
+        <ol>
+          <li>Abre este archivo en tu navegador.</li>
+          <li>Cambia el color principal desde la paleta.</li>
+          <li>Alterna entre claro, oscuro o ambos.</li>
+          <li>Recorre las pantallas listas para capturas o demo.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="controls">
+      <div class="control-group">
+        <span class="control-label">Modo</span>
+        <div class="segmented">
+          <button class="mode-button is-active" data-mode="both">Claro + oscuro</button>
+          <button class="mode-button" data-mode="light">Solo claro</button>
+          <button class="mode-button" data-mode="dark">Solo oscuro</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <span class="control-label">Color activo</span>
+        <div class="accent-picker" id="accent-picker"></div>
+      </div>
+    </section>
+
+    <section class="gallery-intro">
+      <div>
+        <p class="eyebrow">Pantallas</p>
+        <h2>Vista completa de la experiencia</h2>
+      </div>
+      <p>
+        Cada tarjeta usa el mismo lenguaje visual de la app: gradientes fuertes, tarjetas suaves,
+        métricas compactas y estados de protección claros.
+      </p>
+    </section>
+
+    <section class="gallery" id="gallery"></section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
