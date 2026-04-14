@@ -126,6 +126,18 @@ body {
   line-height: 1.85;
 }
 
+.logo-panel {
+  display: grid;
+  place-items: center;
+}
+
+.brand-logo {
+  width: min(220px, 70%);
+  height: auto;
+  border-radius: 36px;
+  box-shadow: 0 20px 50px rgba(123, 47, 190, 0.22);
+}
+
 .controls {
   display: flex;
   flex-wrap: wrap;
